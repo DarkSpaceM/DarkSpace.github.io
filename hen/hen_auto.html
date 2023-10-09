@@ -1,17 +1,17 @@
 <html>
 <head>
 </head>
-<title>Dark Space For Hen 4.90</title>
+<title>Dark Space HEN 4.90</title>
 <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 	<main>
 	</main>
 	
-<title>Auto HEN 4.90</title>
+<title>Auto HEN Install 4.90</title>
 <link rel="stylesheet" href="style.css">
 <center>
-<h1><span style='color:rgb(0, 64, 255)'>HFW 4.90</span></h1>
+<h1><span style='color:#ff0073	'>HFW 4.90</span></h1>
 <hr>
-<h2><span style='color:rgb(255, 255, 255)'>Automatically install HEN on your PS3</span></h2>
+<h2><span style='color:rgb(255, 255, 255)'>Automatically Install HEN On Your PS3 Console</span></h2>
 <hr>
 <div id="result"></div>
 <div id="exploit"></div>
@@ -322,7 +322,7 @@ function initROP(init)
 
 		stack_frame=stack_frame_hookup()
 		+syscall(0x345,flash_partition_addr,fs_addr,mount_path_addr,0,0,0,0,0)
-		+store_word(0x8a000004+sf_swap_addr,sp_exit)
+		+store_word(0x8a000004+sf_swap_addr,sp_exit) 
 		+store_word(0x8a000014+sf_swap_addr,gadget_mod8_addr)
 		+syscall(0x321,base_file_addr,0x0,0x8e000000,0,0,0,0,0)
 		+syscall_r3r5_p2p(0x322,0x8e000000,0x8a000000,0x11000,0x8e000008,0,0,0,0,0,0)
@@ -407,13 +407,13 @@ function triggerX()
 }
 function HFWmsg()
 {
-	showMsg("<h2><span style='color:red'>Make sure you installed HFW 4.90 on your console before using this!</h2></span>");
+	showMsg("<h2><span style='color:red'>Make Sure You Installed HFW 4.90 On Your Console Before Using This !</h2></span>");
 	throw new Error('');
 }
 if(fwv=="4.90"){initROP(true)}else{HFWmsg()}
 </script>
 <img border="5px" width="250" height="250" src="DarkSpace.gif"></img>
-<h4 style="text-align:center; color: rgb(255, 255, 255)" >Created By : DarkSpace Community </h4>
+<h4 style="text-align:center; color: #ff0073" >Created By : Dark Space Community </h4>
 <br>
 <br>
 <br>

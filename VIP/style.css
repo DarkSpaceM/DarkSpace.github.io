@@ -8,5 +8,5 @@ body
 }
 
 p {
-    border:double 3px rgb(0, 255, 179);
+    border:double 3px #ff0073    ;
 }
